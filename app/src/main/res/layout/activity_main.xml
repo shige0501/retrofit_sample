@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="net.buildbox.sample.retrofit_sample.MainActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/activity_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin">
+
+        <TextView
+            android:id="@+id/cjag_event_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:textSize="12sp"
+            tools:text="51822"/>
+
+        <TextView
+            android:id="@+id/cjag_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cjag_event_id"
+            android:layout_marginTop="8dp"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            tools:text="日本Androidの会 中国支部 第34回勉強会"/>
+
+        <TextView
+            android:id="@+id/cjag_catch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cjag_title"
+            android:layout_marginTop="16dp"
+            android:textSize="12sp"
+            tools:text="モダンな開発をテーマに、Firebaseなどのコンテンツをお届けします"/>
+
+        <WebView
+            android:id="@+id/cjag_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cjag_catch"
+            android:layout_marginTop="16dp"/>
+
+    </RelativeLayout>
+
+</layout>
